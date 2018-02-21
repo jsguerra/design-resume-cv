@@ -1,2 +1,2 @@
-# design-resume-cv
-A simple and minimalist HTML5 resume cv template.
+# Design Resume CV
+A simple and minimalist HTML5 single page resume cv template.
