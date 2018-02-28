@@ -1,0 +1,93 @@
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: map-get($font-headings, family);
+	font-weight: map-get($font-headings, weight);
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+	color: setcolor(pink);
+}
+
+h3 {
+	font-size: 20px;
+	color: setcolor(grey);
+}
+
+a {
+	color: $hambgcolor;
+	text-decoration: none;
+	-webkit-transition: color .3s linear;
+	-moz-transition: color .3s linear;
+	transition: color .3s linear;
+
+	&:hover {
+		color: setcolor(pink, dark);
+		text-decoration: underline;
+	}
+}
+
+p {
+	margin-bottom: 2.5rem;
+	letter-spacing: 1px;
+}
+
+p + p {
+	text-indent: 0;
+}
+
+abbr {
+	color: setcolor(pink);
+}
+
+dl {
+
+}
+
+dt {
+	font-family: $dosis;
+	color: setcolor(pink);
+
+	&:after {
+		content: ':';
+	}
+}
+
+dd {
+
+}
+
+blockquote {
+	font-family: map-get($font, family);
+	font-size: 1.1rem;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+	border-left: 4px solid setcolor(pink);
+
+	p {
+		margin-bottom: 0;
+	}
+
+	footer {
+
+		&:before {
+			content: "\2014";
+			color: setcolor(pink);
+		}
+	}
+}
+
+.lead {
+	line-height: $typl8-line-height;
+	margin-bottom: 2.5rem;
+}

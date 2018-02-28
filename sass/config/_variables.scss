@@ -1,0 +1,56 @@
+// Font Families
+//$georgia:      'Georgia', Cambria, Times, serif;
+//$verdana:      'Verdana', Geneva, Arial, sans-serif;
+$monospace:    'Courier New', Courier, monospace;
+$droid:        'Droid Sans Mono', monospace;
+$dosis:        'Dosis', sans-serif;
+
+// Colour Palette
+$palette: (
+	grey: (
+		base:     #444,
+		light:    #666,
+		x-light:  #f1f1f1,
+		xx-light: #fafafa,
+		dark:     #222,
+	),
+
+	pink: (
+		base:  #fe3b6c,
+		light: #ffb1c5,
+		dark:  #d03181,
+	),
+
+	blue: (
+		base:  #b1fffd,
+		light: #d6fffe,
+	)
+);
+
+// Base Map
+$font: (
+	family:     $dosis,
+	size:       112.5%, // 131.25%
+	weight:     400,
+);
+
+$font-headings: (
+	family:     $dosis,
+	weight:     600,
+);
+
+$font-fixed: (
+	family:      $monospace,
+	size:        85%,
+	line-height: $typl8-line-height,
+);
+
+// Hamburger
+$hambgcolor:        setcolor(pink);
+$hambasewidth:      22px;
+$hamsizemultiplier: 1.5;
+
+// Breakpoints
+$mobile:            480px;
+$tablet:            768px;
+$desktop:           1024px;

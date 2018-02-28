@@ -1,4 +1,5 @@
-# Design Resume CV
-A simple and minimalist HTML5 single page resume cv template.
+# https://joseguerra.uk
 
-Design coming soon
+My personal page displayed on my domain.
+
+It's a simple HTML5/CSS3 design embracing minimalism.

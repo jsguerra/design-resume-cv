@@ -1,0 +1,27 @@
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2.5rem;
+
+	&.alignleft {
+		margin-left: -4rem;
+	}
+
+	&.alignright {
+		margin-right: -4rem;
+	}
+}
+
+.featured {
+	width: calc(100% + 8rem);
+	max-width: none;
+	margin-left: -4rem;
+	margin-right: -4rem;
+
+	@include until($tablet){
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

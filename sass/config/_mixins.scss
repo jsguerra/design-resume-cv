@@ -1,0 +1,11 @@
+// Media Queries
+@mixin until($device-width){
+	@media screen and (max-width: $device-width){
+		@content;
+	}
+}
+
+// Function to shorten the use of map-get()
+@function setcolor($color, $tone: base){
+	@return map-get(map-get($palette, $color), $tone);
+}

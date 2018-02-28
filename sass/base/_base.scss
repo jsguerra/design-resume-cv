@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.is-noscroll {
+	pointer-events: none;
+	height: 100%;
+	overflow: hidden;
+}
+
+.is-hidden {
+	display: none;
+}
+
+html {
+	font-size: map-get($font, size);
+}
+
+body, input, textarea, select, button {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: map-get($font, family);
+	background-color: white;
+}
+
+// Alignments
+.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,248 @@
+.hero {
+	background-color: setcolor(grey, xx-light);
+	padding-top: 60px;
+
+	.site-title {
+		font-weight: 700;
+		padding-left: 40px;
+
+		.first-letter {
+			margin-right: 60px;
+		}
+	}
+
+	.hero-block {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 20px;
+			left: 100px;
+			height: 100%;
+			width: 4px;
+			background-color: setcolor(pink);
+		}
+	}
+
+	.hero-entry {
+		padding: 1em 0 14px 190px;
+
+		p {
+			margin-bottom: 80px;
+		}
+	}
+
+	.languages {
+		color: setcolor(pink, light);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+
+		.language-item {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-right: 2rem;
+			margin-bottom: 0.75rem;
+		}
+	}
+
+	#heart {
+		position: relative;
+		width: 52px;
+		height: 45px;
+
+		&:before,
+		&:after {
+			position: absolute;
+			content: "";
+			left: 102px;
+			top: 54px;
+			width: 17px;
+			height: 28px;
+			background: setcolor(pink);
+			-moz-border-radius: 50px 50px 0 0;
+			border-radius: 50px 50px 0 0;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-transform-origin: 0 100%;
+			-moz-transform-origin: 0 100%;
+			-ms-transform-origin: 0 100%;
+			-o-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+		}
+
+		&:after {
+		left: 85px;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-webkit-transform-origin: 100% 100%;
+			-moz-transform-origin: 100% 100%;
+			-ms-transform-origin: 100% 100%;
+			-o-transform-origin: 100% 100%;
+			transform-origin :100% 100%;
+		}
+	}
+}
+
+.hero-dot {
+	display: block;
+	background-color: setcolor(pink);
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid white;
+	position: absolute;
+	  bottom: -25px;
+		left: 97px;
+	z-index: 1;
+}
+
+.alternate {
+	background-color: setcolor(blue, light);
+}
+
+.timeline {
+	position: relative;
+	padding-bottom: 2rem;
+
+	&:before {
+		content: '';
+		position: absolute;
+			 top: 0;
+			left: 100px;
+		height: 100%;
+		width: 4px;
+		background-color: setcolor(pink);
+	}
+
+	.timeline-intro {
+		padding: 100px 0 100px 190px;
+	}
+
+	.timeline-title {
+		padding-left: 190px;
+	}
+
+	.timeline-block {
+		position: relative;
+		padding: 0 0 0 190px;
+
+		.timeline-date {
+			position: absolute;
+				 top: 12px;
+				left: 0;
+			font-weight: 600;
+			color: setcolor(grey);
+		}
+
+		.timeline-dot {
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-color: setcolor(pink);
+			position: absolute;
+				 top: 20px;
+				left: 94px;
+			border-radius: 50px;
+			border: 2px solid white;
+
+			&:after {
+				content: '';
+				width: 100px;
+				height: 4px;
+				background-color: setcolor(pink);
+				position: absolute;
+					 top: 4px;
+					left: 10px;
+				z-index: -1;
+				opacity: 0.6;
+			}
+		}
+
+		.timeline-item {
+			background-color: setcolor(blue);
+			padding: 20px 30px;
+			margin-bottom: 60px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+				-ms-flex-flow: row wrap;
+					flex-flow: row wrap;
+
+			&.alternate {
+				background-color: setcolor(blue, light);
+			}
+
+			.timeline-item-title {
+				-webkit-box-flex: 1;
+					-ms-flex: 1;
+						flex: 1;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+					-ms-flex-flow: column wrap;
+						flex-flow: column wrap;
+				-webkit-box-pack: center;
+					-ms-flex-pack: center;
+						justify-content: center;
+
+				h3 {
+					margin: 0;
+				}
+			}
+
+			.timeline-item-content {
+				padding-left: 20px;
+				-webkit-box-flex: 3;
+					-ms-flex: 3;
+						flex: 3;
+
+				p {
+					margin: 0;
+				}
+			}
+		}
+
+		&:last-child {
+
+			.timeline-item {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.cta-dot {
+	display: block;
+	background-color: setcolor(pink);
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 2px solid white;
+	position: absolute;
+	  top: -60px;
+		left: 97px;
+	z-index: 1;
+}
+
+.cta-block {
+	padding-left: 190px;
+}
